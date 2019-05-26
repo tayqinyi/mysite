@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd060149-8e00-4053-923e-6fc5c0d0fb69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fd060149-8e00-4053-923e-6fc5c0d0fb69" name="Default Changelist" comment="Git ignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4928">
+            <state relative-caret-position="2650">
               <caret line="308" column="14" selection-start-line="308" selection-start-column="14" selection-end-line="308" selection-end-column="14" />
             </state>
           </provider>
@@ -49,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
+            <state relative-caret-position="536">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -63,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="53" />
+            <state relative-caret-position="264">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -284,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558870456149</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Git ignore">
+      <created>1558870720624</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558870720624</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -310,9 +315,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49894625" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50105375" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -415,6 +420,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings_dev.py" />
     <entry file="file://$PROJECT_DIR$/main/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -425,10 +431,20 @@
     <entry file="file://$PROJECT_DIR$/main/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/home.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4928">
-          <caret line="308" column="14" selection-start-line="308" selection-start-column="14" selection-end-line="308" selection-end-column="14" />
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -439,23 +455,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/models.py">
+    <entry file="file://$PROJECT_DIR$/main/templates/main/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="2650">
+          <caret line="308" column="14" selection-start-line="308" selection-start-column="14" selection-end-line="308" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings_dev.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="53" />
+        <state relative-caret-position="264">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
