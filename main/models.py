@@ -5,9 +5,9 @@ import datetime
 class BaseObject(models.Model):
 
     name = models.CharField(max_length = 200);
-    description = models.TextField(blank=True);
-    imagepath = models.TextField(blank=True);
-    classes = models.TextField(blank=True);
+    description = models.TextField(null=True, blank=True);
+    imagepath = models.TextField(null=True, blank=True);
+    classes = models.TextField(null=True, blank=True);
 
     def __str__(self):
         return self.name;
@@ -18,23 +18,23 @@ class BaseObject(models.Model):
 
 class BaseResume(BaseObject):
     institute = models.CharField(max_length = 200);
-    start = models.DateTimeField("Start Date", blank=True)
-    end = models.DateTimeField("End Date", blank=True)
+    start = models.DateField("Start Date", null=True, blank=True)
+    end = models.DateField("End Date", null=True, blank=True)
 
     class Meta:
         abstract = True;
 
 class Skill(BaseObject):
-    displayname = models.TextField(blank=True)
-    level = models.IntegerField(blank=True);
+    displayname = models.TextField(null=True, blank=True)
+    level = models.IntegerField(null=True, blank=True);
 
 class Project(BaseObject):
-    moreinfo = models.TextField(blank=True)
+    moreinfo = models.TextField(null=True, blank=True)
     skills = models.ManyToManyField(Skill);
 
-class Resume_Education(BaseObject):
+class Resume_Education(BaseResume):
     pass;
 
 class Resume_Job(BaseResume):
-    jobtitle = models.CharField(max_length = 200);
+    pass;
 

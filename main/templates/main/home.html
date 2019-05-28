@@ -30,6 +30,7 @@
       <a class="nav-item nav-link" data-toggle="tab" href="#section-resume">Resume</a>
       <!--<a class="nav-item nav-link" data-toggle="tab" href="#section-blog">Blog</a>-->
       <a class="nav-item nav-link" data-toggle="tab" href="#section-contact">Contact</a>
+      <a class="nav-item" href="https://www.linkedin.com/in/qinyi-tay-48a1aa100/" target="_blank"><span class="fab fa-linkedin" style=""></span></a>
     </nav>
 
     <div class="tab-content">
@@ -218,7 +219,7 @@
             {% endfor %}
           </div>
           <div id="divSkillCloud">
-            <canvas id="canvasSkillCloud" class="canvas_skill" width="800" height="200">
+            <canvas id="canvasSkillCloud" class="canvas_skill" width="480" height="180">
             </canvas>
           </div>
         </div>
@@ -320,69 +321,26 @@
             </div>
             <div class="col-md-6">
               <h2 class="mb-5">Education</h2>
+              {% for resume_edu in resume_educations %}
               <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-                <h3>Masteral in Information Technology</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">New York University</span>
+                <span class="date"><span class="icon-calendar"></span>{{ resume_edu.start|date:"F Y" }} - {{ resume_edu.end|date:"F Y" }}</span>
+                <h3>{{ resume_edu.name }}</h3>
+                <p>{{ resume_edu.description|safe }}</p>
+                <span class="school">{{ resume_edu.institute }}</span>
               </div>
-
-              <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present Deacember.</span>
-                <h3>Masteral in Information Technology</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">New York University</span>
-              </div>
-
-              <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-                <h3>Masteral in Information Technology</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">New York University</span>
-              </div>
-
-              <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present Deacember.</span>
-                <h3>Masteral in Information Technology</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">New York University</span>
-              </div>
-
+              {% endfor %}
             </div>
             <div class="col-md-6">
 
-
               <h2 class="mb-5">Experience</h2>
-
+              {% for resume_job in resume_jobs %}
               <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-                <h3>Lead Product Designer</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">Github</span>
+                <span class="date"><span class="icon-calendar"></span>{{ resume_job.start|date:"F Y" }} - {% if resume_job.end == None %}Present{% endif %}</span>
+                <h3>{{ resume_job.name }}</h3>
+                <p>{{ resume_job.description|safe }}</p>
+                <span class="school">{{ resume_job.institute }}</span>
               </div>
-
-              <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-                <h3>Lead Product Designer</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">Facebook</span>
-              </div>
-
-              <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-                <h3>Lead Product Designer</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">Twitter</span>
-              </div>
-
-              <div class="resume-item mb-4">
-                <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-                <h3>Lead Product Designer</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <span class="school">Shopify</span>
-              </div>
-
-
+              {% endfor %}
             </div>
           </div>
         </div>

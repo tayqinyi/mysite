@@ -369,6 +369,6 @@ $(function()
 
 // Skill cloud
 $(document).ready(() => {
-    list = [['C++', 60], ['Python', 60], ['Apache', 40],['Django', 40],['Tensorflow', 40], ['ScikitLearn', 40], ['UTF', 40]]
+    list = [['C++', 40], ['Python', 40], ['Apache', 30],['Django', 30],['Tensorflow', 30], ['sklearn', 30], ['UTF', 30]]
     WordCloud(document.getElementById('canvasSkillCloud'), { list: list, minRotation: 0, maxRotation: 0 } );
 })
