@@ -536,15 +536,11 @@ a {
 .nav-item {
   font-weight: 500; }
 
-.nav-tabs {
-  border-bottom:0px solid #dee2e6; }
-
-.navbar > li > a:hover > a:focus {
-  background-color: #FFFF00;
-  color: #FFC0CB; }
-
-.nav-tabs .nav-link:hover {
-  border-color: transparent; }
+.navbar-dark .navbar-nav .nav-link {
+  color: #66a5ff; }
+ .navbar-dark .navbar-nav .nav-link:hover {
+   color: #3f6aa8;
+   text-decoration: none; }
 
 .contact
 {

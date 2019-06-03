@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
+
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -20,21 +20,36 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
   </head>
   <body>
-
-    <nav class="nav nav-tabs sticky-top bg-dark">
-      <a class="nav-item nav-link active" data-toggle="tab" href="#section-home">Home</a>
-      <a id="nav_about" class="nav-item nav-link" data-toggle="tab" href="#section-about">About</a>
-      <a class="nav-item nav-link" data-toggle="tab" href="#section-skills">Skills</a>
-      <a class="nav-item nav-link" data-toggle="tab" href="#section-project">Projects</a>
-      <!--<a class="nav-item nav-link" data-toggle="tab" href="#section-testimonials">Testimonials</a>-->
-      <a class="nav-item nav-link" data-toggle="tab" href="#section-resume">Resume</a>
-      <!--<a class="nav-item nav-link" data-toggle="tab" href="#section-blog">Blog</a>-->
-      <a class="nav-item nav-link" data-toggle="tab" href="#section-contact">Contact</a>
+    <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#section-home" data-toggle="tab">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-about" data-toggle="tab">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-skills" data-toggle="tab">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-project" data-toggle="tab">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-resume" data-toggle="tab">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-contact" data-toggle="tab">Contact</a>
+          </li>
+        </ul>
+      </div>
       <a class="nav-item nav-link ml-auto" href="https://www.linkedin.com/in/qinyi-tay-48a1aa100/" target="_blank"><span class="fab fa-linkedin" style=""></span></a>
     </nav>
 
     <div class="tab-content">
-
       <div class="site-hero tab-pane fade show active" style="background-image: url(/static/images/home.jpg);" id="section-home" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row intro-text align-items-center justify-content-center">
