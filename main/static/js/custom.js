@@ -12,10 +12,10 @@ $(function()
 });
 
 // More about me
-    var btn_home_moreabtme = document.getElementById('btn_home_moreabtme');
-    btn_home_moreabtme.onclick = function(){
-        document.getElementById("nav_about").click();
-    };
+var btn_home_moreabtme = document.getElementById('btn_home_moreabtme');
+btn_home_moreabtme.onclick = function(){
+    document.getElementById("nav_about").click();
+};
 
 (function() {
 
