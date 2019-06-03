@@ -53,7 +53,7 @@ a {
   position: relative;
   overflow: hidden; }
   .site-hero, .site-hero .row {
-    height: calc(100vh - 51px);
+    height: calc(100vh - 66px);
     min-height: 800px;
     overflow-y: hidden }
   .site-hero:before {
