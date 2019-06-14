@@ -39,7 +39,7 @@
             <a class="nav-link" href="#section-project" data-toggle="tab">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section-resume" data-toggle="tab">Resume</a>
+            <a class="nav-link" href="#section-experience" data-toggle="tab">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#section-contact" data-toggle="tab">Contact</a>
@@ -165,12 +165,12 @@
         </div>
       </div>
 
-      <div class="site-section bg-light tab-pane fade" id="section-resume">
+      <div class="site-section bg-light tab-pane fade" id="section-experience">
         <div class="container">
           <div class="row">
             <div class="col-md-12 mb-5">
               <div class="section-heading text-center">
-                <h2>My <strong>Resume</strong></h2>
+                <h2>My <strong>Experience</strong></h2>
               </div>
             </div>
             <div class="col-md-6">
@@ -186,7 +186,7 @@
             </div>
             <div class="col-md-6">
 
-              <h2 class="mb-5">Experience</h2>
+              <h2 class="mb-5">Job</h2>
               {% for resume_job in resume_jobs %}
               <div class="resume-item mb-4">
                 <span class="date"><span class="icon-calendar"></span>{{ resume_job.start|date:"F Y" }} - {% if resume_job.end == None %}Present{% endif %}</span>
