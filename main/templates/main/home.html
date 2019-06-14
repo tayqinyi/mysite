@@ -179,7 +179,7 @@
               <div class="resume-item mb-4">
                 <span class="date"><span class="icon-calendar"></span>{{ resume_edu.start|date:"F Y" }} - {{ resume_edu.end|date:"F Y" }}</span>
                 <h3>{{ resume_edu.name }}</h3>
-                <span class="school">{{ resume_edu.institute }}</span>
+                <span class="school"><a href="{{ resume_edu.link }}">{{ resume_edu.institute }}</a></span>
                 <p>{{ resume_edu.description|safe }}</p>
               </div>
               {% endfor %}
@@ -191,7 +191,7 @@
               <div class="resume-item mb-4">
                 <span class="date"><span class="icon-calendar"></span>{{ resume_job.start|date:"F Y" }} - {% if resume_job.end == None %}Present{% endif %}</span>
                 <h3>{{ resume_job.name }}</h3>
-                <span class="school">{{ resume_job.institute }}</span>
+                <span class="school"><a href="{{ resume_job.link }}">{{ resume_job.institute }}</a></span>
                 <p>{{ resume_job.description|safe }}</p>
               </div>
               {% endfor %}

@@ -1,5 +1,4 @@
 from django.db import models
-import datetime
 
 # Create your models here.
 class BaseObject(models.Model):
@@ -20,6 +19,7 @@ class BaseResume(BaseObject):
     institute = models.CharField(max_length = 200);
     start = models.DateField("Start Date", null=True, blank=True)
     end = models.DateField("End Date", null=True, blank=True)
+    link = models.URLField("Link", null=True, blank=True)
 
     class Meta:
         abstract = True;
